@@ -220,6 +220,24 @@ button {
      padding: 0;
 }
 
+button {
+     color: #000; /* Ensure text color is set */
+     background-color: #fff; /* Ensure background color is set */
+}
+button {
+     display: inline-block; /* 確保button元素顯示 */
+     visibility: visible; /* 確保button元素可見 */
+}
+button {
+     /* 檢查並重置可能影響button元素的樣式 */
+     text-indent: 0;
+     text-transform: none;
+     letter-spacing: normal;
+     word-spacing: normal;
+     white-space: normal;
+     text-align: center;
+     vertical-align: middle;
+}
 
 /**-- heading section --**/
 
@@ -295,6 +313,19 @@ ul.btn li:last-child {
      position: relative;
 }
 
+/* Ensure touch targets have sufficient size */
+a.touch-target, button.navbar-toggler {
+     display: inline-block;
+     min-width: 44px; /* Minimum width for touch target */
+     min-height: 44px; /* Minimum height for touch target */
+     padding: 10px; /* Add padding to increase touch area */
+}
+
+/* Ensure sufficient spacing between touch targets */
+a.touch-target + a.touch-target, button.navbar-toggler + button.navbar-toggler {
+     margin-left: 8px; /* Space between touch targets */
+}
+
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
      color: #fbca47;
@@ -350,7 +381,7 @@ ul.btn li:last-child {
 .header {
      width: 100%;
      padding: 73px 80px;
-     background: url(../images/hearder.jpg);
+     background: url(../images/hearder.avif);
      background-size: 100% 100%;
      background-repeat: no-repeat;
 }
@@ -370,6 +401,35 @@ ul.btn li:last-child {
      line-height: 40px;
 }
 
+/** navigation **/
+
+.navigation.navbar {
+     float: right;
+     padding-top: 12px;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+     margin: 0 23px;
+     color: #030000;
+     font-size: 17px;
+     line-height: 20px;
+     font-weight: 400;
+     text-transform: uppercase;
+     padding: 0 0 3px 0;
+     position: relative;
+}
+
+/* Increase the touch target size */
+a.touch-target, button.navbar-toggler {
+     display: inline-block;
+     min-width: 44px;
+     min-height: 44px;
+}
+
+/* Increase the spacing between touch targets */
+a.touch-target + a.touch-target, button.navbar-toggler + button.navbar-toggler {
+     margin-left: 8px;
+}
 
 /** banner section **/
 
@@ -482,6 +542,14 @@ ul.btn li:last-child {
      font-weight: bold;
 }
 
+/* Increase color contrast for span.yellow */
+span.yellow {
+     color: #fbca47; /* Adjust to a more contrasting color if needed */
+     background-color: #17094c; /* Ensure background provides sufficient contrast */
+     padding: 5px 10px; /* Increase padding to make the background box larger */
+     border-radius: 10px; /* Add rounded corners */
+}
+
 .titlepage p {
      font-size: 20px;
      color: #090a0b;
@@ -517,7 +585,7 @@ ul.btn li:last-child {
 /** about section **/
 
 .about {
-     background: url(../images/abo_bg.jpg);
+     background: url(../images/abo_bg.avif);
      background-repeat: no-repeat;
      background-size: 100% 100%;
      padding-top: 80px;
@@ -559,7 +627,7 @@ ul.btn li:last-child {
 /** services section **/
 
 .services {
-     background: url(../images/service.jpg);
+     background: url(../images/service.avif);
      background-repeat: no-repeat;
      background-size: 100% 100%;
      padding: 70px 0 60px 0;
@@ -638,7 +706,7 @@ ul.btn li:last-child {
 /** bitcoins section **/
 
 .bitcoins {
-     background: url(../images/bg.jpg);
+     background: url(../images/bg.avif);
      background-repeat: no-repeat;
      background-size: 100% 100%;
      padding-top: 70px;
@@ -689,6 +757,11 @@ ul.btn li:last-child {
      margin-top: 40px;
 }
 
+/* Increase color contrast for div.wallet */
+div.wallet {
+     color: #000; /* Adjust to a more contrasting color if needed */
+     background-color: #fff; /* Ensure background provides sufficient contrast */
+}
 
 /** end wallet section **/
 
@@ -696,7 +769,7 @@ ul.btn li:last-child {
 /** Subscribe section **/
 
 .subscribe {
-     background: url(../images/sub_bg.jpg);
+     background: url(../images/sub_bg.avif);
      background-repeat: no-repeat;
      background-size: 100% 100%;
      padding: 200px 0;
@@ -751,6 +824,11 @@ ul.btn li:last-child {
      background-color: #17094c;
 }
 
+/* Increase color contrast for button.subscribe_btn */
+button.subscribe_btn {
+     color: #fff; /* Adjust to a more contrasting color if needed */
+     background-color: #fbca47; /* Ensure background provides sufficient contrast */
+}
 
 /** end Subscribe section **/
 
@@ -816,7 +894,12 @@ ul.btn li:last-child {
      display: none;
 }
 
-
+/* Increase color contrast for textarea.textarea */
+textarea.textarea {
+     color: #000; /* Adjust to a more contrasting color if needed */
+     background-color: #fff; /* Ensure background provides sufficient contrast */
+     border-color: #000; /* Ensure border provides sufficient contrast */
+}
 /** end testimonial section **/
 
 
@@ -854,6 +937,13 @@ ul.btn li:last-child {
      border-radius: 30px;
 }
 
+/* Increase color contrast for textarea.textarea */
+textarea.textarea {
+     color: #000; /* Adjust to a more contrasting color if needed */
+     background-color: #fff; /* Ensure background provides sufficient contrast */
+     border-color: #000; /* Ensure border provides sufficient contrast */
+}
+
 .contac_form .send_btn {
      font-size: 17px;
      transition: ease-in all 0.5s;
@@ -876,6 +966,12 @@ ul.btn li:last-child {
      color: #fff;
 }
 
+/* Increase color contrast for button.send_btn */
+button.send_btn {
+     color: #fff; /* Adjust to a more contrasting color if needed */
+     background-color: #fbca47; /* Ensure background provides sufficient contrast */
+}
+
 #contac_form *::placeholder {
      color: #cecece;
      opacity: 1;
@@ -892,6 +988,27 @@ ul.btn li:last-child {
 .map figure img {
      width: 100%;
 }
+
+/* Increase color contrast for input.contac_control */
+input.contac_control {
+     color: #000; /* Adjust to a more contrasting color if needed */
+     background-color: #fff; /* Ensure background provides sufficient contrast */
+     border-color: #000; /* Ensure border provides sufficient contrast */
+}
+
+/* Increase color contrast for button.send_btn */
+button.send_btn {
+     color: #fff; /* Adjust to a more contrasting color if needed */
+     background-color: #fbca47; /* Ensure background provides sufficient contrast */
+}
+
+
+/* Increase color contrast for div.contact */
+div.contact {
+     color: #000; /* Adjust to a more contrasting color if needed */
+     background-color: #fff; /* Ensure background provides sufficient contrast */
+}
+
 
 
 /** end contact  section **/
