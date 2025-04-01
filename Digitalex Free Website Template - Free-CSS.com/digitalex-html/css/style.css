@@ -6,7 +6,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
-
 @font-face {
      font-family: 'FontAwesome';
      src: url('https://netdna.bootstrapcdn.com/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
@@ -935,7 +934,7 @@ textarea.textarea {
      margin-bottom: 40px;
      width: 100%;
      background: transparent;
-     color: #cecece;
+     color: #070707;
      font-size: 18px;
      font-weight: normal;
      border: #ccc8da solid 1px;
@@ -954,7 +953,7 @@ textarea.textarea {
 .contac_form .send_btn {
      font-size: 17px;
      transition: ease-in all 0.5s;
-     background-color: #fbca47;
+     background-color: #070707;
      text-transform: uppercase;
      color: #fff;
      padding: 15px 0px;
@@ -968,7 +967,7 @@ textarea.textarea {
 }
 
 .contac_form .send_btn:hover {
-     background-color: #17094c;
+     background-color: #fbca47;
      transition: ease-in all 0.5s;
      color: #fff;
 }
@@ -999,7 +998,7 @@ button.send_btn {
 /* Increase color contrast for input.contac_control */
 input.contac_control {
      color: #000; /* Adjust to a more contrasting color if needed */
-     background-color: #fff; /* Ensure background provides sufficient contrast */
+     background-color: #070707; /* Ensure background provides sufficient contrast */
      border-color: #000; /* Ensure border provides sufficient contrast */
 }
 
