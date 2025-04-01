@@ -7,12 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
 
-@font-face {
-     font-family: 'FontAwesome';
-     src: url('https://netdna.bootstrapcdn.com/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
-          url('https://netdna.bootstrapcdn.com/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff');
-     font-display: swap;
-}
+
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
 
@@ -32,6 +27,11 @@
 @import url(jquery.fancybox.min.css);
 @import url(jquery-ui.css);
 @import url(nice-select.css);
+@font-face {
+     font-family: 'Roboto';
+     src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap') format('woff2');
+     font-display: swap;
+}
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
